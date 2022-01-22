@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddDoorActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/appbar"
+        android:background="@color/white"
+        android:layout_marginTop="10dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBarMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+\
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/viga"
+                    android:text="Tele"
+                    android:textSize="32sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/vesper_libre"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="32sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/vollkorn"
+                    android:text="Port"
+                    android:textColor="@color/black"
+                    android:textSize="32sp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Door"
+        android:fontFamily="@font/raleway_bold"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_margin="32dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Door's IP Address"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="2dp"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:id="@+id/edtIp"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Door name"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="2dp"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:id="@+id/edtDoorName"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Door status"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"/>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_btn_ovel_bg"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="10dp">
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            />
+
+    </FrameLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/btn_bg_outline"
+        android:fontFamily="@font/raleway_bold"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+</LinearLayout>

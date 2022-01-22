@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".SignUpActivity"
+android:gravity="bottom"
+    >
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/door"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/viga"
+        android:text="Tele"
+        android:textSize="50sp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/vesper_libre"
+        android:text="-"
+        android:textColor="@color/black"
+        android:textSize="50sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/vollkorn"
+        android:text="Port"
+        android:textColor="@color/black"
+        android:textSize="50sp" />
+
+</LinearLayout>
+
+<EditText
+    android:id="@+id/edtEmail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="e-mail"
+    android:layout_marginLeft="32dp"
+    android:inputType="textEmailAddress"
+    android:layout_marginRight="32dp"/>
+<EditText
+    android:id="@+id/edtPassword"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Password"
+    android:layout_marginLeft="32dp"
+    android:layout_marginTop="12dp"
+    android:inputType="textPassword"
+    android:layout_marginRight="32dp"/>
+<EditText
+    android:id="@+id/edtConfirmPassword"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Confirm Password"
+    android:inputType="textPassword"
+    android:layout_marginTop="12dp"
+    android:layout_marginRight="32dp"
+    android:layout_marginLeft="32dp"
+    />
+
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/btnSignup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="64dp"
+    android:background="@drawable/btn_bg_outline"
+    android:fontFamily="@font/raleway_bold"
+    android:text="Sign up"
+    android:textAllCaps="false"
+    android:textColor="@color/black"
+
+    android:textSize="25sp" />
+
+
+</LinearLayout>
